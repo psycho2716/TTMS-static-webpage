@@ -505,6 +505,7 @@ form a:hover {
 .about-container{
     color: var(--text-color);
     flex-direction: column;
+    padding-top: 20px;
 }
 
 .about-container .about-1,
@@ -517,7 +518,7 @@ form a:hover {
 
 .header-info-container-1{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .header-info-container-2{
@@ -538,7 +539,8 @@ form a:hover {
     gap: 40px;
 }
 
-.card-container h1{
+.card-container h1,
+.tricycle-container h1{
     color: var(--text-color);
 }
 
@@ -582,13 +584,34 @@ form a:hover {
 
 .card-container .card{
     border-radius: 5px;
-    background-color: #211f37;
+    background: rgb(33,31,55);
+    background: linear-gradient(45deg, rgba(33,31,55,1) 0%, rgba(54,52,77,1) 49%, rgba(49,45,70,1) 100%);
     color: var(--text-color);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .card-container .card:hover{
     box-shadow: -4px 4px 8px #b1b1b1;
+}
+
+.contact-container{
+    flex-direction: column;
+}
+
+.contact-container .contact-form{
+    padding: 20px 30px;
+    margin-top: 20px;
+    max-width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgb(33,31,55);
+    background: linear-gradient(45deg, rgba(33,31,55,1) 0%, rgba(54,52,77,1) 49%, rgba(49,45,70,1) 100%);
+}
+
+.contact-form form input,
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder{
+    font-weight: 600;
 }
 
 .terms-2{
@@ -655,6 +678,16 @@ form a:hover {
 
     .about-container .about-2{
         flex-direction: column;
+    }
+
+    .title .title-1 {
+        font-size: 30px;
+        margin-bottom: -5px;
+    }
+
+    .title .title-2 {
+        font-size: 35px;
+        line-height: 35px;
     }
 }
 
